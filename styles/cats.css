@@ -1,0 +1,44 @@
+.cat-image-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(148, 175, 222);
+    align-items: center; /* Placera innehållet vertikalt i mitten */
+    margin-top: 20px; /* Justera önskad toppmarginal */
+}
+
+.cat-image-container h1 {
+    margin-bottom: 10px; /* Justera avståndet mellan "Cats" och bilden */
+    
+}
+
+
+  
+  .col {
+    padding: 1%;
+  }
+
+  .col-lg {
+    width: 400px; 
+    margin: 10px 0;
+    position: relative;
+}
+
+.col-lg img {
+    width: 100%; /* Ange bredden för bilden som 100% av dess förälder (bildbehållaren) */
+    height: auto; /* Automatisk höjd för att behålla bildens proportioner */
+}
+
+  
+  .imgrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  }
+
+  #show-new-cat{
+    margin-bottom: 10px;
+    
+  }
+
+  

@@ -1,0 +1,82 @@
+#game-container{
+    border: 3px solid rgb(74, 67, 67);
+    background-image: url('../images/zombieforest.png');
+    background-size: cover;
+    background-repeat: no-repeat; /* Se till att bakgrundsbilden inte upprepas */
+    background-position: center;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 80px); /* 5x5 rutnät med rutor på 50px */
+    grid-template-rows: repeat(5, 80px);
+    gap: 3px; /* Mellanrum mellan rutorna */
+    background-color: rgba(160, 186, 238, 0.5);
+    border: 2px solid rgba(160, 186, 238, 0.5);
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    
+   
+  }
+  
+  .cell {
+    background-color: rgba(160, 186, 238);
+    border: 1px solid rgba(160, 186, 238, 0.5);
+    text-align: center;
+    line-height: 80px; /* Anpassa höjden här */
+    font-size: 20px; /* Anpassa textstorleken här */
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+
+.controls {
+    padding: 1pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+#west
+#east {
+    margin-bottom: 10px;
+}
+
+#north {
+    margin-bottom: 10px;
+}
+
+#south {
+    margin-top: 10px;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.score-container {
+    padding: 1em;
+    flex: 1; /* Gör score-container flexibel så att den tar så mycket plats som behövs */
+    margin-right: 250px; /* Lägg till lite marginal till höger om score-container */
+    
+}
+.play-again{
+    margin-right: 250px;
+}
+
+
+body {
+    background-color: rgba(186, 205, 253, 0.89); 
+    margin-bottom: 100px;
+   
+}
+

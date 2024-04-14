@@ -10,13 +10,13 @@ const game = {
     start() {
       this.generateEntities();
       this.render();
-      // Visa poängen
+      // Visar poäng
       document.getElementById('score').innerText = this.score;
     },
   
-    // generera katter och zombies
+    // genererar katter och zombies
     generateEntities() {
-      // Generera katter slumpmässigt
+      // Genererar katter slumpmässigt
       for (let i = 0; i < 5; i++) {
         for (let j = 0; j < this.size; j++) {
           if (Math.random() < 0.1) { // 10% chans att placera ut en katt
@@ -25,11 +25,11 @@ const game = {
         }
       }
   
-      // Generera zombies slumpmässigt
+      // Genererar zombies slumpmässigt
       for (let i = 0; i < 2; i++) {
         let x = Math.floor(Math.random() * this.size);
         let y = Math.floor(Math.random() * this.size);
-        // Undvik att placera zombies på samma position som spelaren eller en katt
+        // Undviker att placera zombies på samma position som spelaren eller en katt
         while ((x === this.playerX && y === this.playerY) || this.cats.some(cat => cat.x === x && cat.y === y)) {
           x = Math.floor(Math.random() * this.size);
           y = Math.floor(Math.random() * this.size);
@@ -85,13 +85,14 @@ const game = {
         this.score++;
         // Uppdatera poängvisning
         document.getElementById('score').innerText = this.score;
+        //kör metoden showNewCat när en katt blir räddad
         if(this.score)
         {
           showNewCat();
         }
 
   
-        // Kolla om alla katter är räddade
+        // Kollar om alla katter är räddade
         if (this.cats.length === 0) {
           // Spelet är över
           this.playerX = -1;
@@ -104,14 +105,14 @@ const game = {
          
       }
   
-      this.moveZombies(); // Flytta zombies
+      this.moveZombies(); 
       this.render(); // Uppdatera spelplanen
     },
   
    // Funktion för att flytta zombies slumpmässigt
 moveZombies() {
   this.zombies.forEach(zombie => {
-    // Slumpmässigt välj en riktning att flytta
+    // Slumpmässigt väljer en riktning att flytta
     const directions = ['north', 'south', 'west', 'east'];
     const randomDirection = directions[Math.floor(Math.random() * directions.length)];
 
@@ -182,11 +183,11 @@ moveZombies() {
     location.reload(); // Ladda om sidan för enkelhetens skull
   }
 
-// Lyssna på klickhändelsen för "Play Again" knappen
+// Reagerar på klickhändelsen för "Play Again" knappen
 document.getElementById('play-again').addEventListener('click', restartGame);
 
   
-    // Lyssna på knapptryckningar för att flytta spelaren
+    // Reagerar på knapptryckningar för att flytta spelaren
     document.getElementById('north').addEventListener('click', () => game.movePlayer('north'));
     document.getElementById('south').addEventListener('click', () => game.movePlayer('south'));
     document.getElementById('west').addEventListener('click', () => game.movePlayer('west'));

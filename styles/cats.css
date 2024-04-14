@@ -3,11 +3,11 @@
     flex-direction: column;
     background-color: rgb(148, 175, 222);
     align-items: center; /* Placera innehållet vertikalt i mitten */
-    margin-top: 20px; /* Justera önskad toppmarginal */
+    margin-top: 20px; /* Justerar toppmarginal */
 }
 
 .cat-image-container h1 {
-    margin-bottom: 10px; /* Justera avståndet mellan "Cats" och bilden */
+    margin-bottom: 10px; /* Justerar avståndet mellan "Cats-texten" och bilden */
     
 }
 
@@ -24,7 +24,7 @@
 }
 
 .col-lg img {
-    width: 100%; /* Ange bredden för bilden som 100% av dess förälder (bildbehållaren) */
+    width: 100%; /* Anger bredden för bilden som 100% av dess förälder (bildbehållaren) */
     height: auto; /* Automatisk höjd för att behålla bildens proportioner */
 }
 

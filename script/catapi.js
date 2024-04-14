@@ -1,4 +1,4 @@
-//change the limit to however many images to use
+
 const url = `https://api.thecatapi.com/v1/images/search?limit=1`;
 const api_key = "live_LpnbDhdhIspxFYLe9i03mbVecf1jyMFoE41TO9l3HutJM5dC2WUOpwbA4x7D73aW"
 

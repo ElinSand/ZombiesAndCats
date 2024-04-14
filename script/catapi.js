@@ -50,7 +50,7 @@ function showNewCat() {
             gridCell.classList.add('col-lg');
             gridCell.appendChild(image);
 
-            document.getElementById('grid').innerHTML = ''; // Rensa tidigare bilder
+            document.getElementById('grid').innerHTML = ''; // Rensar tidigare bilder
             document.getElementById('grid').appendChild(gridCell);
         })
         .catch(error => {
@@ -58,5 +58,5 @@ function showNewCat() {
         });
 }
 
-// Lägg till en händelselyssnare på knappen "Show New Cat"
+// Lägger till en händelselyssnare på knappen "Show New Cat"
 document.getElementById('show-new-cat').addEventListener('click', showNewCat);

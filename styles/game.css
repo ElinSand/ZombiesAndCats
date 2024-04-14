@@ -8,7 +8,7 @@
 
 #game-board {
     display: grid;
-    grid-template-columns: repeat(5, 80px); /* 5x5 rutnät med rutor på 50px */
+    grid-template-columns: repeat(5, 80px); /* 5x5 rutnät med rutor på 80px */
     grid-template-rows: repeat(5, 80px);
     gap: 3px; /* Mellanrum mellan rutorna */
     background-color: rgba(160, 186, 238, 0.5);
@@ -24,8 +24,8 @@
     background-color: rgba(160, 186, 238);
     border: 1px solid rgba(160, 186, 238, 0.5);
     text-align: center;
-    line-height: 80px; /* Anpassa höjden här */
-    font-size: 20px; /* Anpassa textstorleken här */
+    line-height: 80px; /* Höjden */
+    font-size: 20px; /*  Textstorleken */
   }
   
   img {
@@ -66,7 +66,7 @@
 .score-container {
     padding: 1em;
     flex: 1; /* Gör score-container flexibel så att den tar så mycket plats som behövs */
-    margin-right: 250px; /* Lägg till lite marginal till höger om score-container */
+    margin-right: 250px; /* Lägg till marginal till höger om score-container */
     
 }
 .play-again{
